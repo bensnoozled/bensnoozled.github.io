@@ -1,0 +1,65 @@
+title: nonzero
+description: "Writing, photography, paintings, and 3D art."
+url: "https://banderl.net"
+baseurl: ""
+
+author: bensnoozled
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+collections:
+  writing:
+    output: true
+    permalink: /writing/:path/
+  photography:
+    output: true
+    permalink: /photography/:path/
+  paintings:
+    output: true
+    permalink: /paintings/:path/
+  3d-art:
+    output: true
+    permalink: /3d-art/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: writing
+    values:
+      layout: writing
+  - scope:
+      path: ""
+      type: photography
+    values:
+      layout: gallery-item
+      category: Photography
+  - scope:
+      path: ""
+      type: paintings
+    values:
+      layout: gallery-item
+      category: Paintings
+  - scope:
+      path: ""
+      type: 3d-art
+    values:
+      layout: gallery-item
+      category: 3D Art
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

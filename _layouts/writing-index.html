@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+{% if content and content != "" %}<div class="prose intro">{{ content }}</div>{% endif %}
+
+{% assign items = site.writing | sort: "date" | reverse %}
+<ul class="item-list">
+  {% for item in items %}
+  <li>
+    <a href="{{ item.url | relative_url }}">
+      <span class="item-title">{{ item.title }}</span>
+      <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
+    </a>
+    {% if item.excerpt %}<p class="item-excerpt">{{ item.excerpt | strip_html | truncatewords: 30 }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>

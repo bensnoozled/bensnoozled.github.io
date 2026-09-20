@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<section class="hero">
+  {{ content }}
+</section>
+
+{% assign recent = "" | split: "" %}
+{% for item in site.writing %}{% assign recent = recent | push: item %}{% endfor %}
+{% for item in site.photography %}{% assign recent = recent | push: item %}{% endfor %}
+{% for item in site.paintings %}{% assign recent = recent | push: item %}{% endfor %}
+{% for item in site["3d-art"] %}{% assign recent = recent | push: item %}{% endfor %}
+{% assign recent = recent | sort: "date" | reverse %}
+
+<section class="recent">
+  <h2>Recent</h2>
+  <ul class="item-list">
+    {% for item in recent limit: 6 %}
+    <li>
+      <a href="{{ item.url | relative_url }}">
+        <span class="item-category">{{ item.category | default: "Writing" }}</span>
+        <span class="item-title">{{ item.title }}</span>
+        <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="section-cards">
+  <a class="card" href="{{ '/writing/' | relative_url }}">Writing</a>
+  <a class="card" href="{{ '/photography/' | relative_url }}">Photography</a>
+  <a class="card" href="{{ '/paintings/' | relative_url }}">Paintings</a>
+  <a class="card" href="{{ '/3d-art/' | relative_url }}">3D Art</a>
+</section>
