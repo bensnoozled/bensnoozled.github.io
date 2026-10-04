@@ -82,6 +82,22 @@ a {
   font-size: 0.85rem;
 }
 
+.site-footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+
+.site-footer a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.site-footer a:hover {
+  color: var(--fg);
+}
+
 /* Main */
 main.wrap {
   padding-top: 2.5rem;
