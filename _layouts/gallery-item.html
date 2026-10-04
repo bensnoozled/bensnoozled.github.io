@@ -5,6 +5,7 @@ layout: default
   <header class="piece-header">
     <h1>{{ page.title }}</h1>
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+    {% if page.medium %}<span class="piece-medium">{{ page.medium }}</span>{% endif %}
   </header>
   {% if page.image %}
   <figure class="piece-figure">

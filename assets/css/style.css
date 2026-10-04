@@ -221,9 +221,13 @@ h2 {
   max-width: var(--max-width);
   margin-bottom: 1.5rem;
 }
-.piece-header time {
+.piece-header time,
+.piece-medium {
   color: var(--fg-muted);
   font-size: 0.9rem;
+}
+.piece-medium::before {
+  content: " · ";
 }
 .piece-figure {
   margin: 0 0 2rem;

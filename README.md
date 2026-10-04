@@ -37,9 +37,9 @@ Optional caption/description text goes here. Leave the body empty if there's not
 
 The `image:` path is relative to the site root.
 
-### Removing the example entries
+### Paintings: medium
 
-Each collection ships with one placeholder entry (`example-*.md` / `hello-world.md`) using an SVG placeholder image. Delete these once real content is in.
+Paintings can add `medium:` to the front matter (e.g. `medium: Acrylic on canvas`). It shows next to the date on the painting's page.
 
 ## Local preview (optional)
 
