@@ -1,6 +1,6 @@
 # nonzero
 
-Personal site for writing, photography, paintings, and 3D art. Built with Jekyll, hosted on GitHub Pages at [banderl.net](https://banderl.net).
+Personal site for writing, poetry, photography, paintings, and 3D art. Built with Jekyll, hosted on GitHub Pages at [banderl.net](https://banderl.net).
 
 ## Adding content
 
@@ -17,6 +17,22 @@ date: 2026-09-20
 ---
 
 Body text goes here, written in Markdown.
+```
+
+### Poetry — `_poetry/`
+
+Same front matter as writing (`title`, `date`). Line breaks are kept as written, so type each line on its own line and leave a blank line between stanzas:
+
+```markdown
+---
+title: My Poem
+date: 2026-11-01
+---
+
+First line of the poem
+second line of the poem
+
+Next stanza begins here
 ```
 
 ### Photography / Paintings / 3D Art — `_photography/`, `_paintings/`, `_3d-art/`

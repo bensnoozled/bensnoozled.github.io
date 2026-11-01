@@ -1,5 +1,5 @@
 title: nonzero
-description: "Writing, photography, paintings, and 3D art."
+description: "Writing, poetry, photography, paintings, and 3D art."
 url: "https://banderl.net"
 baseurl: ""
 
@@ -14,6 +14,9 @@ collections:
   writing:
     output: true
     permalink: /writing/:path/
+  poetry:
+    output: true
+    permalink: /poetry/:path/
   photography:
     output: true
     permalink: /photography/:path/
@@ -30,6 +33,12 @@ defaults:
       type: writing
     values:
       layout: writing
+  - scope:
+      path: ""
+      type: poetry
+    values:
+      layout: writing
+      category: Poetry
   - scope:
       path: ""
       type: photography
