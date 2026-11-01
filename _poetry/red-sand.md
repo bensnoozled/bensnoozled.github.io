@@ -23,7 +23,7 @@ Through high tides sucking squelching hold, a bullet’s greeting before their g
 
 “I will go”, they bravely said, “I will paint the beaches red”.
 
-Till bloody deaths appetite consoled, the stars and stripes raised on the atoll
+Till bloody death's appetite consoled, the stars and stripes raised on the atoll
 
 So small a prize for what was lost a tiny stone in a greater cause.
 

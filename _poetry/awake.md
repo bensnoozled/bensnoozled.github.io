@@ -17,4 +17,4 @@ Through bleary eyes the work is done, quick hands rushing to outrun the sun
 
 Though morning comes fast and harsh, for this work regrets are sparse
 
-So for tonight night, this is my fate, another night I’m kept awake
+So for tonight, this is my fate, another night I’m kept awake
