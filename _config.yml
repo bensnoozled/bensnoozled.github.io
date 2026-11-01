@@ -39,6 +39,7 @@ defaults:
     values:
       layout: writing
       category: Poetry
+      hide_date: true
   - scope:
       path: ""
       type: photography

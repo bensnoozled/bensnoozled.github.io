@@ -21,7 +21,7 @@ Body text goes here, written in Markdown.
 
 ### Poetry — `_poetry/`
 
-Same front matter as writing (`title`, `date`). Line breaks are kept as written, so type each line on its own line and leave a blank line between stanzas:
+Same front matter as writing (`title`, `date`). Dates aren't shown on poems; `date` only sets the order (newest first), so a rough one like `2022-01-01` is fine. Line breaks are kept as written, so type each line on its own line and leave a blank line between stanzas:
 
 ```markdown
 ---

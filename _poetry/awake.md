@@ -1,6 +1,6 @@
 ---
 title: Awake
-date: 2026-11-01
+date: 2022-01-01
 ---
 
 As orange light fades away off west, the world around lies down to rest.

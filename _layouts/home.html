@@ -21,7 +21,7 @@ layout: default
       <a href="{{ item.url | relative_url }}">
         <span class="item-category">{{ item.category | default: "Writing" }}</span>
         <span class="item-title">{{ item.title }}</span>
-        <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
+        {% unless item.hide_date %}<time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>{% endunless %}
       </a>
     </li>
     {% endfor %}
